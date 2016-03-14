@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>RAVE</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css">
+    <style>
+        body {
+            padding: 2rem;
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <h1>RAVE (REST API Very Epic) </h1>
+    
+    <p>
+        All paths are relative to <strong>https://api.foo.bar/v1</strong><br>
+        An <strong>API key</strong> is required, to get one contact <a href="mailto:mail@foo.bar">mail@foo.bar</a><br>
+        For JSONP response include <strong>&amp;callback=&lt;custom name&gt;</strong>
+    </p>
+    
+    <div class="ui segment">
+        <h3>GET /foo/bar/:id</h3>
+        <p>Get foo bar based on id</p>
+        <div class="ui message blue small">
+            <table class="ui very basic collapsing celled table">
+                <thead>
+                    <tr>
+                        <th>Method parameter</th>
+                        <th>Type</th>
+                        <th>Required</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>id</td>
+                        <td>int</td>
+                        <td>Yes</td>
+                        <td>Bar id</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="ui message yellow small">
+            <table class="ui very basic collapsing celled table">
+                <thead>
+                    <tr>
+                        <th>Query parameter</th>
+                        <th>Type</th>
+                        <th>Required</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>i</td>
+                        <td>ing</td>
+                        <td>Yes</td>
+                        <td>Some required integer</td>
+                    </tr>                    <tr>
+                        <td>s</td>
+                        <td>string</td>
+                        <td>No</td>
+                        <td>Some string to use for something</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h4>Example</h4>
+        <a href="">
+            https://foo.bar/v1/foo/bar/1234?i=665&s=Neighbour of the beast&key=1234
+        </a>
+    </div>
+        
+</body>
+</html>
